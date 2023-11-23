@@ -1,0 +1,109 @@
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #111111;
+  z-index: 1;
+}
+
+header > div{
+  padding: 16px 40px 16px;
+}
+
+.header__main{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.header__main__menu{
+  display: flex;
+  gap : 8px;
+}
+
+.header__main__menu li a:hover{
+  color:#1962B0
+}
+
+.header__sub{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__sub__first{
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__sub__first li:nth-child(2){
+  width: 1px;
+  height: 24px;
+  background-color: #444444;
+}
+
+.header__sub__first li:first-child:hover a{
+  color: #4B8819;
+}
+
+.header__sub__first li:last-child:hover a{
+  color:#1962B0
+}
+
+.header__sub__second{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.header__sub__second li a:hover{
+  color: #4B8819;
+}
+
+.header__sub__second li:last-child{
+  position: relative;
+}
+
+.header__sub__second .search__input{
+  width: 160px;
+  height: 20px;
+  color:#fff;
+  background-color: #111111;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 4px 28px 4px 4px;
+  position: relative;
+}
+
+.header__sub__second .search__input:focus{
+  background-color: #000;
+  border-color: #1962B0;
+}
+
+.header__sub__second .search__input::placeholder{
+  color: #fff;
+}
+
+.header__sub__second .search__btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.header__sub__second .search__btn span{
+  color: #fff;
+  font-size: 20px;
+}
+
+.header__sub__second .search__btn:hover span{
+  color: #1962B0;
+}

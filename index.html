@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul jazz Records</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./header.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./footer.css">
+
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!--Swiper-->
+
+  <script defer src="main.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header__main">
+      <p>Welcome</p>
+      <ul class="header__main__menu">
+        <li><a href="#">Bog</a></li>
+        <li><a href="#">Sign In/Register</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#"><svg class="btn--icon" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10V10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.19073 14.4122 4.5301 14.4362 3.89 14.31C4.16161 15.1625 4.69354 15.9084 5.41102 16.4429C6.1285 16.9775 6.99545 17.2737 7.89 17.29C6.37363 18.4904 4.494 19.1393 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#"><svg class="btn--icon" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#"><svg class="btn--icon" width="25" height="24" viewBox="0 0 25 24" fill="#ffffff"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18.0067 5.46C17.7693 5.46 17.5373 5.53038 17.34 5.66224C17.1426 5.79409 16.9888 5.98151 16.898 6.20078C16.8072 6.42005 16.7834 6.66133 16.8297 6.89411C16.876 7.12689 16.9903 7.34071 17.1581 7.50853C17.326 7.67635 17.5398 7.79064 17.7726 7.83694C18.0053 7.88324 18.2466 7.85948 18.4659 7.76866C18.6852 7.67783 18.8726 7.52402 19.0044 7.32668C19.1363 7.12935 19.2067 6.89734 19.2067 6.66C19.2067 6.34174 19.0802 6.03652 18.8552 5.81147C18.6302 5.58643 18.3249 5.46 18.0067 5.46ZM22.6067 7.88C22.5872 7.0503 22.4318 6.2294 22.1467 5.45C21.8924 4.78313 21.4967 4.17928 20.9867 3.68C20.4915 3.16743 19.8862 2.77418 19.2167 2.53C18.4393 2.23616 17.6175 2.07721 16.7867 2.06C15.7267 2 15.3867 2 12.6667 2C9.94667 2 9.60667 2 8.54667 2.06C7.71582 2.07721 6.89401 2.23616 6.11667 2.53C5.44834 2.77665 4.8436 3.16956 4.34667 3.68C3.83409 4.17518 3.44084 4.78044 3.19667 5.45C2.90283 6.22734 2.74388 7.04915 2.72667 7.88C2.66667 8.94 2.66667 9.28 2.66667 12C2.66667 14.72 2.66667 15.06 2.72667 16.12C2.74388 16.9508 2.90283 17.7727 3.19667 18.55C3.44084 19.2196 3.83409 19.8248 4.34667 20.32C4.8436 20.8304 5.44834 21.2234 6.11667 21.47C6.89401 21.7638 7.71582 21.9228 8.54667 21.94C9.60667 22 9.94667 22 12.6667 22C15.3867 22 15.7267 22 16.7867 21.94C17.6175 21.9228 18.4393 21.7638 19.2167 21.47C19.8862 21.2258 20.4915 20.8326 20.9867 20.32C21.4989 19.8226 21.895 19.2182 22.1467 18.55C22.4318 17.7706 22.5872 16.9497 22.6067 16.12C22.6067 15.06 22.6667 14.72 22.6667 12C22.6667 9.28 22.6667 8.94 22.6067 7.88ZM20.8067 16C20.7994 16.6348 20.6844 17.2637 20.4667 17.86C20.307 18.2952 20.0505 18.6884 19.7167 19.01C19.3923 19.3405 18.9999 19.5964 18.5667 19.76C17.9704 19.9778 17.3414 20.0927 16.7067 20.1C15.7067 20.15 15.3367 20.16 12.7067 20.16C10.0767 20.16 9.70667 20.16 8.70667 20.1C8.04756 20.1123 7.39126 20.0109 6.76667 19.8C6.35245 19.6281 5.97802 19.3728 5.66667 19.05C5.33476 18.7287 5.08151 18.3352 4.92667 17.9C4.68252 17.2952 4.54711 16.6519 4.52667 16C4.52667 15 4.46667 14.63 4.46667 12C4.46667 9.37 4.46667 9 4.52667 8C4.53115 7.35106 4.64962 6.70795 4.87667 6.1C5.05272 5.67791 5.32293 5.30166 5.66667 5C5.97048 4.65617 6.34596 4.3831 6.76667 4.2C7.37622 3.98004 8.01867 3.86508 8.66667 3.86C9.66667 3.86 10.0367 3.8 12.6667 3.8C15.2967 3.8 15.6667 3.8 16.6667 3.86C17.3014 3.86728 17.9304 3.98225 18.5267 4.2C18.9811 4.36865 19.389 4.64285 19.7167 5C20.0444 5.30718 20.3004 5.68273 20.4667 6.1C20.6889 6.70893 20.804 7.35178 20.8067 8C20.8567 9 20.8667 9.37 20.8667 12C20.8667 14.63 20.8567 15 20.8067 16ZM12.6667 6.87C11.6525 6.87198 10.6616 7.17453 9.81932 7.73942C8.97701 8.30431 8.32105 9.1062 7.9343 10.0438C7.54756 10.9813 7.44739 12.0125 7.64646 13.0069C7.84553 14.0014 8.3349 14.9145 9.05274 15.631C9.77058 16.3474 10.6847 16.835 11.6795 17.0321C12.6744 17.2293 13.7053 17.1271 14.6421 16.7385C15.5789 16.35 16.3795 15.6924 16.9428 14.849C17.506 14.0056 17.8067 13.0142 17.8067 12C17.808 11.3251 17.6759 10.6566 17.4179 10.033C17.1599 9.40931 16.7812 8.84281 16.3035 8.36605C15.8258 7.88929 15.2586 7.51168 14.6345 7.25493C14.0103 6.99818 13.3416 6.86736 12.6667 6.87ZM12.6667 15.33C12.0081 15.33 11.3642 15.1347 10.8166 14.7688C10.269 14.4029 9.84219 13.8828 9.59015 13.2743C9.33811 12.6659 9.27216 11.9963 9.40065 11.3503C9.52914 10.7044 9.84629 10.111 10.312 9.64533C10.7777 9.17963 11.3711 8.86247 12.017 8.73398C12.663 8.6055 13.3325 8.67144 13.941 8.92348C14.5495 9.17552 15.0696 9.60234 15.4355 10.15C15.8014 10.6976 15.9967 11.3414 15.9967 12C15.9967 12.4373 15.9105 12.8703 15.7432 13.2743C15.5758 13.6784 15.3306 14.0454 15.0213 14.3547C14.7121 14.6639 14.345 14.9092 13.941 15.0765C13.537 15.2439 13.104 15.33 12.6667 15.33Z" />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#"><svg class="btn--icon" width="25" height="24" viewBox="0 0 25 24" fill="#ffffff"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_213_54)">
+                <path
+                  d="M1.49334 16.466C1.54234 16.466 1.58334 16.427 1.59134 16.373L1.86134 14.351L1.59134 12.282C1.58892 12.2571 1.57755 12.234 1.55934 12.2169C1.54112 12.1998 1.51731 12.1899 1.49234 12.189C1.44234 12.189 1.39834 12.229 1.39234 12.282L1.15634 14.351L1.39234 16.372C1.39834 16.427 1.44334 16.466 1.49334 16.466ZM0.605336 15.697C0.653336 15.697 0.693336 15.661 0.700336 15.607L0.909336 14.351L0.700336 13.071C0.693336 13.018 0.653336 12.981 0.605336 12.981C0.554336 12.981 0.515336 13.018 0.507336 13.071L0.333336 14.351L0.507336 15.607C0.515336 15.66 0.554336 15.697 0.605336 15.697ZM2.55334 11.897C2.55133 11.8664 2.53786 11.8377 2.51562 11.8165C2.49339 11.7954 2.46401 11.7834 2.43334 11.783C2.4027 11.7832 2.3733 11.7951 2.35117 11.8163C2.32905 11.8375 2.31587 11.8664 2.31434 11.897L2.09034 14.351L2.31434 16.715C2.31637 16.7454 2.3299 16.7739 2.35219 16.7947C2.37448 16.8155 2.40385 16.8271 2.43434 16.827C2.46492 16.8268 2.49429 16.8151 2.51655 16.7941C2.53882 16.7731 2.55231 16.7445 2.55434 16.714L2.80834 14.351L2.55334 11.897ZM3.38534 16.922C3.42091 16.9214 3.45497 16.9075 3.48086 16.8831C3.50675 16.8587 3.5226 16.8255 3.52534 16.79L3.76634 14.351L3.52634 11.829C3.52359 11.7934 3.50759 11.76 3.48149 11.7356C3.45539 11.7112 3.42108 11.6974 3.38534 11.697C3.34939 11.697 3.3148 11.7107 3.28874 11.7355C3.26267 11.7603 3.24713 11.7941 3.24534 11.83L3.03234 14.351L3.24434 16.79C3.24614 16.8261 3.26182 16.8601 3.2881 16.8848C3.31437 16.9096 3.34921 16.9223 3.38534 16.922ZM4.34334 16.962C4.38462 16.9621 4.42438 16.9464 4.45449 16.9181C4.4846 16.8899 4.50279 16.8512 4.50534 16.81L4.73134 14.351L4.50534 12.011C4.50254 11.97 4.48425 11.9315 4.45417 11.9035C4.42408 11.8755 4.38446 11.8599 4.34334 11.86C4.30225 11.8599 4.26272 11.8757 4.23294 11.904C4.20315 11.9323 4.18539 11.971 4.18334 12.012L3.98334 14.352L4.18334 16.81C4.18539 16.851 4.20315 16.8897 4.23294 16.918C4.26272 16.9463 4.30225 16.9621 4.34334 16.962ZM5.70334 14.352L5.49134 10.547C5.48855 10.5005 5.46821 10.4567 5.43443 10.4246C5.40065 10.3925 5.35594 10.3744 5.30934 10.374C5.26266 10.3742 5.21782 10.3922 5.18398 10.4244C5.15015 10.4565 5.12989 10.5004 5.12734 10.547L4.93934 14.352L5.12734 16.81C5.13206 16.855 5.15327 16.8966 5.18688 16.9269C5.22048 16.9571 5.26411 16.9739 5.30934 16.9739C5.35456 16.9739 5.39819 16.9571 5.4318 16.9269C5.4654 16.8966 5.48661 16.855 5.49134 16.81L5.70334 14.352ZM6.28434 16.987C6.33612 16.9871 6.38593 16.9671 6.42337 16.9313C6.46082 16.8956 6.48302 16.8467 6.48534 16.795V16.797L6.68434 14.353L6.48534 9.677C6.48173 9.62575 6.45883 9.57778 6.42125 9.54275C6.38367 9.50772 6.33421 9.48824 6.28284 9.48824C6.23146 9.48824 6.182 9.50772 6.14442 9.54275C6.10684 9.57778 6.08394 9.62575 6.08034 9.677L5.90634 14.353L6.08134 16.796C6.08417 16.8477 6.10686 16.8964 6.14468 16.9318C6.18251 16.9672 6.23254 16.9876 6.28434 16.987ZM7.26434 9.076C7.20698 9.07568 7.15172 9.09758 7.11015 9.1371C7.06858 9.17662 7.04392 9.2307 7.04134 9.288L6.87934 14.353L7.04134 16.771C7.04392 16.8282 7.06862 16.8822 7.11022 16.9215C7.15182 16.9609 7.20707 16.9826 7.26434 16.982C7.32167 16.9828 7.37707 16.9612 7.41872 16.9218C7.46038 16.8824 7.485 16.8283 7.48734 16.771L7.67234 14.353L7.48734 9.288C7.48525 9.23053 7.46074 9.17616 7.41906 9.13653C7.37738 9.09691 7.32184 9.07518 7.26434 9.076ZM8.25334 16.987C8.31631 16.9881 8.3772 16.9644 8.42284 16.921C8.46849 16.8776 8.49525 16.818 8.49734 16.755V16.757L8.66734 14.353L8.49734 9.118C8.49525 9.05522 8.46863 8.99577 8.4232 8.95239C8.37777 8.90902 8.31714 8.88518 8.25434 8.886C8.19138 8.88466 8.13046 8.90832 8.08491 8.9518C8.03937 8.99529 8.01291 9.05505 8.01134 9.118L7.85834 14.353L8.01134 16.757C8.01334 16.886 8.12034 16.987 8.25334 16.987ZM9.25134 16.985C9.31945 16.9858 9.38516 16.9599 9.43434 16.9128C9.48352 16.8656 9.51224 16.8011 9.51434 16.733V16.735L9.67134 14.354L9.51434 9.251C9.51173 9.18327 9.48279 9.11923 9.43366 9.07253C9.38453 9.02584 9.31911 9.00017 9.25134 9.001C9.18339 8.9999 9.11771 9.02545 9.06837 9.07218C9.01903 9.11891 8.98994 9.18309 8.98734 9.251L8.84934 14.354L8.98834 16.734C8.99134 16.874 9.10734 16.984 9.25134 16.984V16.985ZM10.6823 14.354L10.5403 9.437C10.5377 9.36379 10.5065 9.29452 10.4534 9.24404C10.4003 9.19356 10.3296 9.16591 10.2563 9.167C10.1827 9.16565 10.1116 9.19332 10.0582 9.24404C10.0049 9.29476 9.97369 9.36444 9.97134 9.438L9.84434 14.354L9.97134 16.72C9.97395 16.7934 10.0053 16.8628 10.0586 16.9133C10.1119 16.9638 10.1829 16.9914 10.2563 16.99C10.3301 16.9911 10.4013 16.963 10.4545 16.9119C10.5076 16.8608 10.5385 16.7907 10.5403 16.717V16.72L10.6823 14.354ZM11.2683 16.994C11.4333 16.994 11.5693 16.864 11.5723 16.704L11.7013 14.355L11.5723 8.505C11.5697 8.42639 11.5365 8.35193 11.4796 8.29755C11.4228 8.24316 11.347 8.21317 11.2683 8.214C11.1897 8.21342 11.1139 8.24346 11.0569 8.29777C11 8.35207 10.9664 8.42639 10.9633 8.505L10.8483 14.353L10.9633 16.705C10.9663 16.863 11.1033 16.994 11.2683 16.994ZM12.2773 7.664C12.1931 7.66263 12.1117 7.69432 12.0506 7.75228C11.9895 7.81023 11.9535 7.88983 11.9503 7.974L11.8173 14.356L11.9513 16.671C11.9545 16.7546 11.9902 16.8337 12.051 16.8913C12.1117 16.9489 12.1926 16.9804 12.2763 16.979C12.3604 16.9801 12.4414 16.9481 12.5021 16.8899C12.5627 16.8317 12.598 16.752 12.6003 16.668V16.671L12.7463 14.356L12.6003 7.975C12.598 7.89118 12.5628 7.81163 12.5024 7.75347C12.442 7.69531 12.3612 7.66318 12.2773 7.664ZM13.1993 16.996L21.3803 17C23.0113 17 24.3333 15.732 24.3333 14.167C24.3333 12.603 23.0113 11.335 21.3803 11.335C20.9763 11.335 20.5903 11.414 20.2383 11.555C20.0053 9.003 17.7733 7 15.0513 7C14.3863 7 13.7373 7.126 13.1643 7.339C12.9413 7.422 12.8813 7.507 12.8793 7.672V16.661C12.8825 16.7463 12.9168 16.8275 12.9757 16.8893C13.0347 16.951 13.1143 16.989 13.1993 16.996Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_213_54">
+                  <rect width="24" height="24" transform="translate(0.333336)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__sub">
+      <ul class="header__sub__first">
+        <li><a href="#">Soul Jazz Records</a></li>
+        <li></li>
+        <li><a href="#">Sounds of the Universe</a></li>
+      </ul>
+      <ul class="header__sub__second">
+        <li><a href="#">MUSIC</a></li>
+        <li><a href="#">BOOKS</a></li>
+        <li><a href="#">STUFF</a></li>
+        <li><a href="#">GIFT VOUCHER</a></li>
+        <li><a href="#">B2B</a></li>
+        <li>
+          <input type="text" placeholder="Search..." class="search__input">
+          <button class="search__btn"><span class="material-symbols-outlined">search</span></button>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <Main>
+    <div class="container">
+      <section class="featuredNews">
+        <p class="featuredNews__title section__title">Featured News</p>
+        <a href="#" class="featuredNews__content">
+          <div>
+            <img src="./img/featuredNews_1.png" alt="Soul Jazz Records Live Mixtape Radio Show #INTHEMIX">
+            <p>Soul Jazz Records Mixtape radio show</p>
+            <span>READ MORE HERE</span>
+            <div class="featuredNews__content__indicator">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </a>
+      </section>
+      <section class="newReleases">
+        <p class="newReleases__title section__title">New Release</p>
+        <div class="newReleases__content">
+          <div class="newReleases__content__intro">
+            <div class="newReleases__content__jacket">
+              <img src="./img/jacket1.jpeg" alt="Soul Jazz Records Live Mixtape Radio Show #INTHEMIX">
+            </div>
+            <div class="newReleases__content__description">
+              <a href="#" class="newReleases__content__description__tile">Studio One Kings</a>
+              <a href="#" class="newReleases__content__description_genre">SOUL JAZZ RECORDS</a>
+              <p class="newReleases__content__description__explanation">Soul Jazz Records’ new one-off limited-edition
+                heavyweight special-edition coloured vinyl pressing + download code exclusively for Black Friday 2024 of
+                Soul Jazz Records’ long out of print classic Studio One Kings.
+
+                Featuring a new striking alternative sleeve design (featuring the singer Freddie McKay) as well as a
+                special yellow coloured vinyl pressing, Studio One Kings is a 'who's who' of the world's greatest reggae
+                artists.
+
+                Studio One’s list of singers launched at the famous label reads like a roll call of Jamaican music.
+                Horace Andy, Alton Ellis, Ken Boothe, Freddie McGregor, Johnny Osbourne and more. This album features
+                classic and rare tracks that span the breadth of the legendary Studio One catalogue: Ska, Roots,
+                Rocksteady, Lovers and more from the 1960s and 70s.
+
+                The album comes with sleeve-notes by the celebrated writer Chris Salewicz, author of Reggae Explosion,
+                Rude Boy as well as notable books on Bob Marley, The Rolling Stones, Jimmy Page, Joe Strummer and more.
+              </p>
+              <a href="#" class="newReleases__content__description_readMore">Read more</a>
+              <ul>
+                <li>
+                  <button class="btn--play"><img src="./icons/play.svg" alt="playicon" class=".btn--icon"></button>
+                  <span class="number">1.</span>
+                  Larry Marshall - I've Got To Make It
+                </li>
+                <li>
+                  <button class="btn--play"><img src="./icons/play.svg" alt="playicon" class=".btn--icon"></button>
+                  <span class="number">2.</span>
+                  Horace Andy - Every Tongue Shall Tell
+                </li>
+                <li>
+                  <button class="btn--play"><img src="./icons/play.svg" alt="playicon" class=".btn--icon"></button>
+                  <span class="number">3.</span>
+                  Alton Ellis - The Well Run Dry
+                </li>
+              </ul>
+              <a href="#" class="newReleases__content__description_fullInfo">View full into and tracklisting</a>
+            </div>
+          </div>
+          <div class="newReleases__list">
+            <ul>
+              <li>
+                <img src="./img/jacket1.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket2.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket3.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket4.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket5.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket6.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket7.png" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket8.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+              <li>
+                <img src="./img/jacket9.jpeg" alt="Album Jacket">
+                <div class="dimmer">
+                  <span>a</span>
+                  <span>a</span>
+                  <span>a</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="midNav">
+      <a href="#">COMPLETE ALBUM DISCOGRAPHY</a>
+      <a href="#">COMPLETE SINGLES DISCOGRAPHY</a>
+      <a href="#">STUDIO ONE RELEASES</a>
+      <a href="#">Soul Jazz bags, Posters, T-shirts</a>
+    </section>
+    <section class="soulJazzRecordsBookTitles swiper">
+      <p class="soulJazzRecordsBookTitles__title section__title">Soul Jazz Records book titles</p>
+      <div class="soulJazzRecordsBookTitles__content swiper-wrapper">
+        <ul class="swiper-slide">
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket8.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Dancehall Book</p>
+                  <a href="#" class="item--author">The Rise Of Jamaican Dancehall Culture</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket17.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Voguing: Voguing and the House Ballroom Scene of New York City 1989-92</p>
+                  <a href="#" class="item--author">Photographs and interviews by Chantal Regnault, Introduction by Tim
+                    Lawrence</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket18.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Punk 45: The Singles Cover Art of Punk 1976-80</p>
+                  <a href="#" class="item--author">Edited by Jon Savage and Stuart Baker with a new introduction by
+                    Bobbie Gillespie</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">POST-PUNK/PUNK/NO WAVE <span>BOOKS</span></p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">POST-PUNK/PUNK/NO WAVE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket19.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Yo! The Early Days of Hip-Hop 1982-84</p>
+                  <a href="#" class="item--author">Photography by Sophie Bramly</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">HIP-HOP BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">HIP-HOP</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket20.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cuba: Original Album Cover Art of Cuban Music</p>
+                  <a href="#" class="item--author">Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS EXCLUSIVES AND ESSENTIALS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                    <a href="#">EXCLUSIVES AND ESSENTIALS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket21.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">NEW EDITION Freedom, Rhythm and Sound BOOK</p>
+                  <a href="#" class="item--author">By Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ RECORDS</a>
+                  <p class="item--genre">JAZZ BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">JAZZ</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket22.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">90 Degrees of Shade</p>
+                  <a href="#" class="item--author">Over 100 Years of Photography in the Caribbean</a>
+                  <a href="#" class="item--type">INTRODUCTION BY PAUL GILROY</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket23.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cover Are of Studio One Records</p>
+                  <a href="#" class="item--author">Deluxe Hardback 12x12" 200 page</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul class="swiper-slide">
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket8.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Dancehall Book</p>
+                  <a href="#" class="item--author">The Rise Of Jamaican Dancehall Culture</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket17.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Voguing: Voguing and the House Ballroom Scene of New York City 1989-92</p>
+                  <a href="#" class="item--author">Photographs and interviews by Chantal Regnault, Introduction by Tim
+                    Lawrence</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket18.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Punk 45: The Singles Cover Art of Punk 1976-80</p>
+                  <a href="#" class="item--author">Edited by Jon Savage and Stuart Baker with a new introduction by
+                    Bobbie Gillespie</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">POST-PUNK/PUNK/NO WAVE <span>BOOKS</span></p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">POST-PUNK/PUNK/NO WAVE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket19.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Yo! The Early Days of Hip-Hop 1982-84</p>
+                  <a href="#" class="item--author">Photography by Sophie Bramly</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">HIP-HOP BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">HIP-HOP</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket20.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cuba: Original Album Cover Art of Cuban Music</p>
+                  <a href="#" class="item--author">Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS EXCLUSIVES AND ESSENTIALS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                    <a href="#">EXCLUSIVES AND ESSENTIALS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket21.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">NEW EDITION Freedom, Rhythm and Sound BOOK</p>
+                  <a href="#" class="item--author">By Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ RECORDS</a>
+                  <p class="item--genre">JAZZ BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">JAZZ</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket22.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">90 Degrees of Shade</p>
+                  <a href="#" class="item--author">Over 100 Years of Photography in the Caribbean</a>
+                  <a href="#" class="item--type">INTRODUCTION BY PAUL GILROY</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket23.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cover Are of Studio One Records</p>
+                  <a href="#" class="item--author">Deluxe Hardback 12x12" 200 page</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <section class="ad">
+      <a href="#">
+        <img src="./img/ad1.png" alt="FREE SHIPPING IN THE UK OVER 100EURO">
+      </a>
+      <a href="#">
+        <img src="./img/ad2.png" alt="EUROPE CHEAP SHIPPING">
+      </a>
+    </section>
+    <section class="browsing">
+      <p class="browsing__title section__title">Browsing:</p>
+      <div class="soulJazzRecordsBookTitles__content">
+        <ul>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket4.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Dancehall Book</p>
+                  <a href="#" class="item--author">The Rise Of Jamaican Dancehall Culture</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket5.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Voguing: Voguing and the House Ballroom Scene of New York City 1989-92</p>
+                  <a href="#" class="item--author">Photographs and interviews by Chantal Regnault, Introduction by Tim
+                    Lawrence</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket3.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Punk 45: The Singles Cover Art of Punk 1976-80</p>
+                  <a href="#" class="item--author">Edited by Jon Savage and Stuart Baker with a new introduction by
+                    Bobbie Gillespie</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">POST-PUNK/PUNK/NO WAVE <span>BOOKS</span></p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">POST-PUNK/PUNK/NO WAVE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket7.png" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Yo! The Early Days of Hip-Hop 1982-84</p>
+                  <a href="#" class="item--author">Photography by Sophie Bramly</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">HIP-HOP BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">HIP-HOP</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket9.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cuba: Original Album Cover Art of Cuban Music</p>
+                  <a href="#" class="item--author">Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS EXCLUSIVES AND ESSENTIALS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                    <a href="#">EXCLUSIVES AND ESSENTIALS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket6.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">NEW EDITION Freedom, Rhythm and Sound BOOK</p>
+                  <a href="#" class="item--author">By Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ RECORDS</a>
+                  <p class="item--genre">JAZZ BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">JAZZ</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket10.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">90 Degrees of Shade</p>
+                  <a href="#" class="item--author">Over 100 Years of Photography in the Caribbean</a>
+                  <a href="#" class="item--type">INTRODUCTION BY PAUL GILROY</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket11.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cover Are of Studio One Records</p>
+                  <a href="#" class="item--author">Deluxe Hardback 12x12" 200 page</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket12.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Dancehall Book</p>
+                  <a href="#" class="item--author">The Rise Of Jamaican Dancehall Culture</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket14.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Voguing: Voguing and the House Ballroom Scene of New York City 1989-92</p>
+                  <a href="#" class="item--author">Photographs and interviews by Chantal Regnault, Introduction by Tim
+                    Lawrence</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket13.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Punk 45: The Singles Cover Art of Punk 1976-80</p>
+                  <a href="#" class="item--author">Edited by Jon Savage and Stuart Baker with a new introduction by
+                    Bobbie Gillespie</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">POST-PUNK/PUNK/NO WAVE <span>BOOKS</span></p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">POST-PUNK/PUNK/NO WAVE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket15.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Yo! The Early Days of Hip-Hop 1982-84</p>
+                  <a href="#" class="item--author">Photography by Sophie Bramly</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">HIP-HOP BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">HIP-HOP</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket24.jpg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cuba: Original Album Cover Art of Cuban Music</p>
+                  <a href="#" class="item--author">Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">BOOKS EXCLUSIVES AND ESSENTIALS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                    <a href="#">EXCLUSIVES AND ESSENTIALS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket25.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">NEW EDITION Freedom, Rhythm and Sound BOOK</p>
+                  <a href="#" class="item--author">By Gilles Peterson and Stuart Baker</a>
+                  <a href="#" class="item--type">SOUL JAZZ RECORDS</a>
+                  <p class="item--genre">JAZZ BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">JAZZ</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket26.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">90 Degrees of Shade</p>
+                  <a href="#" class="item--author">Over 100 Years of Photography in the Caribbean</a>
+                  <a href="#" class="item--type">INTRODUCTION BY PAUL GILROY</a>
+                  <p class="item--genre">BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="soulJazzRecordsBookTitles__content__item">
+            <div>
+              <img src="./img/jacket27.jpeg" alt="Album Jacket">
+              <div class="item__infoWrapper">
+                <div class="item__defaultInfo">
+                  <p class="item--title">Cover Are of Studio One Records</p>
+                  <a href="#" class="item--author">Deluxe Hardback 12x12" 200 page</a>
+                  <a href="#" class="item--type">SOUL JAZZ BOOKS</a>
+                  <p class="item--genre">REGGAE BOOKS</p>
+                </div>
+                <div class="item__focusInfo">
+                  <div>
+                    <p class="item__focusInfo--description">New edition of the definitive cultural reference book for
+                      Jamaican dancehall and features hundreds of killer photographs, extensive text and interviews with
+                      many of the artists. ‘A vibrant anthology of all that mattered: the sound systems, studios,
+                      producers, singers and deejays.’ The Guardian</p>
+                    <a href="#">REGGAE</a>
+                    <a href="#">BOOKS</a>
+                  </div>
+                  <a href="#">View full into and tracklisting</a>
+                  <div class="item__focusInfo__saleInfo">
+                    <div class="item__focusInfo__saleInfo__weightPrice">
+                      <span class="weight">Book (1.8kg)</span>
+                      <div>
+                        <span class="originPrice">$10.0</span>
+                        <span class="discountedPrice">$8.0</span>
+                      </div>
+                    </div>
+                    <div class="item__focusInfo__saleInfo__stockBtn">
+                      <span class="stockState">In stock</span>
+                      <div class="buttonWrap">
+                        <button class="like">♥</button>
+                        <button class="addToBag">ADD TO BAG</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="browsing__loader">
+        <button class="browsing__loader__loadMore">Load more</button>
+        <div class="browsing__loader__selector">
+          <div class="selector--active"></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="browsing__loader__pagenation">
+          <span>Page</span>
+          <input type="text" class="browsing__loader__pagenation__number" value="1">
+          <span>of 8</span>
+        </div>
+
+      </div>
+    </section>
+  </Main>
+  <footer>
+    <div class="footer__section">
+      <div class="footer__section__divider--upper">
+        <p class="footer__section__title">Sections</p>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Music</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Merchandise</a></li>
+        </ul>
+      </div>
+      <div class="footer__section__divider--below">
+        <span>Follow us</span>
+        <a href=""><svg class="btn--icon" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.46 6C21.69 6.35 20.86 6.58 20 6.69C20.88 6.16 21.56 5.32 21.88 4.31C21.05 4.81 20.13 5.16 19.16 5.36C18.37 4.5 17.26 4 16 4C13.65 4 11.73 5.92 11.73 8.29C11.73 8.63 11.77 8.96 11.84 9.27C8.28 9.09 5.11 7.38 3 4.79C2.63 5.42 2.42 6.16 2.42 6.94C2.42 8.43 3.17 9.75 4.33 10.5C3.62 10.5 2.96 10.3 2.38 10V10.03C2.38 12.11 3.86 13.85 5.82 14.24C5.19073 14.4122 4.5301 14.4362 3.89 14.31C4.16161 15.1625 4.69354 15.9084 5.41102 16.4429C6.1285 16.9775 6.99545 17.2737 7.89 17.29C6.37363 18.4904 4.494 19.1393 2.56 19.13C2.22 19.13 1.88 19.11 1.54 19.07C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79C20.33 8.6 20.33 8.42 20.32 8.23C21.16 7.63 21.88 6.87 22.46 6Z" />
+          </svg></a>
+        <a href=""><svg class="btn--icon" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47 14 5.5 16 5.5H17.5V2.14C17.174 2.097 15.943 2 14.643 2C11.928 2 10 3.657 10 6.7V9.5H7V13.5H10V22H14V13.5Z" />
+          </svg></a>
+        <a href=""><svg class="btn--icon" width="25" height="24" viewBox="0 0 25 24" fill="#ffffff"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M18.0067 5.46C17.7693 5.46 17.5373 5.53038 17.34 5.66224C17.1426 5.79409 16.9888 5.98151 16.898 6.20078C16.8072 6.42005 16.7834 6.66133 16.8297 6.89411C16.876 7.12689 16.9903 7.34071 17.1581 7.50853C17.326 7.67635 17.5398 7.79064 17.7726 7.83694C18.0053 7.88324 18.2466 7.85948 18.4659 7.76866C18.6852 7.67783 18.8726 7.52402 19.0044 7.32668C19.1363 7.12935 19.2067 6.89734 19.2067 6.66C19.2067 6.34174 19.0802 6.03652 18.8552 5.81147C18.6302 5.58643 18.3249 5.46 18.0067 5.46ZM22.6067 7.88C22.5872 7.0503 22.4318 6.2294 22.1467 5.45C21.8924 4.78313 21.4967 4.17928 20.9867 3.68C20.4915 3.16743 19.8862 2.77418 19.2167 2.53C18.4393 2.23616 17.6175 2.07721 16.7867 2.06C15.7267 2 15.3867 2 12.6667 2C9.94667 2 9.60667 2 8.54667 2.06C7.71582 2.07721 6.89401 2.23616 6.11667 2.53C5.44834 2.77665 4.8436 3.16956 4.34667 3.68C3.83409 4.17518 3.44084 4.78044 3.19667 5.45C2.90283 6.22734 2.74388 7.04915 2.72667 7.88C2.66667 8.94 2.66667 9.28 2.66667 12C2.66667 14.72 2.66667 15.06 2.72667 16.12C2.74388 16.9508 2.90283 17.7727 3.19667 18.55C3.44084 19.2196 3.83409 19.8248 4.34667 20.32C4.8436 20.8304 5.44834 21.2234 6.11667 21.47C6.89401 21.7638 7.71582 21.9228 8.54667 21.94C9.60667 22 9.94667 22 12.6667 22C15.3867 22 15.7267 22 16.7867 21.94C17.6175 21.9228 18.4393 21.7638 19.2167 21.47C19.8862 21.2258 20.4915 20.8326 20.9867 20.32C21.4989 19.8226 21.895 19.2182 22.1467 18.55C22.4318 17.7706 22.5872 16.9497 22.6067 16.12C22.6067 15.06 22.6667 14.72 22.6667 12C22.6667 9.28 22.6667 8.94 22.6067 7.88ZM20.8067 16C20.7994 16.6348 20.6844 17.2637 20.4667 17.86C20.307 18.2952 20.0505 18.6884 19.7167 19.01C19.3923 19.3405 18.9999 19.5964 18.5667 19.76C17.9704 19.9778 17.3414 20.0927 16.7067 20.1C15.7067 20.15 15.3367 20.16 12.7067 20.16C10.0767 20.16 9.70667 20.16 8.70667 20.1C8.04756 20.1123 7.39126 20.0109 6.76667 19.8C6.35245 19.6281 5.97802 19.3728 5.66667 19.05C5.33476 18.7287 5.08151 18.3352 4.92667 17.9C4.68252 17.2952 4.54711 16.6519 4.52667 16C4.52667 15 4.46667 14.63 4.46667 12C4.46667 9.37 4.46667 9 4.52667 8C4.53115 7.35106 4.64962 6.70795 4.87667 6.1C5.05272 5.67791 5.32293 5.30166 5.66667 5C5.97048 4.65617 6.34596 4.3831 6.76667 4.2C7.37622 3.98004 8.01867 3.86508 8.66667 3.86C9.66667 3.86 10.0367 3.8 12.6667 3.8C15.2967 3.8 15.6667 3.8 16.6667 3.86C17.3014 3.86728 17.9304 3.98225 18.5267 4.2C18.9811 4.36865 19.389 4.64285 19.7167 5C20.0444 5.30718 20.3004 5.68273 20.4667 6.1C20.6889 6.70893 20.804 7.35178 20.8067 8C20.8567 9 20.8667 9.37 20.8667 12C20.8667 14.63 20.8567 15 20.8067 16ZM12.6667 6.87C11.6525 6.87198 10.6616 7.17453 9.81932 7.73942C8.97701 8.30431 8.32105 9.1062 7.9343 10.0438C7.54756 10.9813 7.44739 12.0125 7.64646 13.0069C7.84553 14.0014 8.3349 14.9145 9.05274 15.631C9.77058 16.3474 10.6847 16.835 11.6795 17.0321C12.6744 17.2293 13.7053 17.1271 14.6421 16.7385C15.5789 16.35 16.3795 15.6924 16.9428 14.849C17.506 14.0056 17.8067 13.0142 17.8067 12C17.808 11.3251 17.6759 10.6566 17.4179 10.033C17.1599 9.40931 16.7812 8.84281 16.3035 8.36605C15.8258 7.88929 15.2586 7.51168 14.6345 7.25493C14.0103 6.99818 13.3416 6.86736 12.6667 6.87ZM12.6667 15.33C12.0081 15.33 11.3642 15.1347 10.8166 14.7688C10.269 14.4029 9.84219 13.8828 9.59015 13.2743C9.33811 12.6659 9.27216 11.9963 9.40065 11.3503C9.52914 10.7044 9.84629 10.111 10.312 9.64533C10.7777 9.17963 11.3711 8.86247 12.017 8.73398C12.663 8.6055 13.3325 8.67144 13.941 8.92348C14.5495 9.17552 15.0696 9.60234 15.4355 10.15C15.8014 10.6976 15.9967 11.3414 15.9967 12C15.9967 12.4373 15.9105 12.8703 15.7432 13.2743C15.5758 13.6784 15.3306 14.0454 15.0213 14.3547C14.7121 14.6639 14.345 14.9092 13.941 15.0765C13.537 15.2439 13.104 15.33 12.6667 15.33Z" />
+          </svg></a>
+        <a href=""><svg class="btn--icon" width="25" height="24" viewBox="0 0 25 24" fill="#ffffff"
+            xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_213_54)">
+              <path
+                d="M1.49334 16.466C1.54234 16.466 1.58334 16.427 1.59134 16.373L1.86134 14.351L1.59134 12.282C1.58892 12.2571 1.57755 12.234 1.55934 12.2169C1.54112 12.1998 1.51731 12.1899 1.49234 12.189C1.44234 12.189 1.39834 12.229 1.39234 12.282L1.15634 14.351L1.39234 16.372C1.39834 16.427 1.44334 16.466 1.49334 16.466ZM0.605336 15.697C0.653336 15.697 0.693336 15.661 0.700336 15.607L0.909336 14.351L0.700336 13.071C0.693336 13.018 0.653336 12.981 0.605336 12.981C0.554336 12.981 0.515336 13.018 0.507336 13.071L0.333336 14.351L0.507336 15.607C0.515336 15.66 0.554336 15.697 0.605336 15.697ZM2.55334 11.897C2.55133 11.8664 2.53786 11.8377 2.51562 11.8165C2.49339 11.7954 2.46401 11.7834 2.43334 11.783C2.4027 11.7832 2.3733 11.7951 2.35117 11.8163C2.32905 11.8375 2.31587 11.8664 2.31434 11.897L2.09034 14.351L2.31434 16.715C2.31637 16.7454 2.3299 16.7739 2.35219 16.7947C2.37448 16.8155 2.40385 16.8271 2.43434 16.827C2.46492 16.8268 2.49429 16.8151 2.51655 16.7941C2.53882 16.7731 2.55231 16.7445 2.55434 16.714L2.80834 14.351L2.55334 11.897ZM3.38534 16.922C3.42091 16.9214 3.45497 16.9075 3.48086 16.8831C3.50675 16.8587 3.5226 16.8255 3.52534 16.79L3.76634 14.351L3.52634 11.829C3.52359 11.7934 3.50759 11.76 3.48149 11.7356C3.45539 11.7112 3.42108 11.6974 3.38534 11.697C3.34939 11.697 3.3148 11.7107 3.28874 11.7355C3.26267 11.7603 3.24713 11.7941 3.24534 11.83L3.03234 14.351L3.24434 16.79C3.24614 16.8261 3.26182 16.8601 3.2881 16.8848C3.31437 16.9096 3.34921 16.9223 3.38534 16.922ZM4.34334 16.962C4.38462 16.9621 4.42438 16.9464 4.45449 16.9181C4.4846 16.8899 4.50279 16.8512 4.50534 16.81L4.73134 14.351L4.50534 12.011C4.50254 11.97 4.48425 11.9315 4.45417 11.9035C4.42408 11.8755 4.38446 11.8599 4.34334 11.86C4.30225 11.8599 4.26272 11.8757 4.23294 11.904C4.20315 11.9323 4.18539 11.971 4.18334 12.012L3.98334 14.352L4.18334 16.81C4.18539 16.851 4.20315 16.8897 4.23294 16.918C4.26272 16.9463 4.30225 16.9621 4.34334 16.962ZM5.70334 14.352L5.49134 10.547C5.48855 10.5005 5.46821 10.4567 5.43443 10.4246C5.40065 10.3925 5.35594 10.3744 5.30934 10.374C5.26266 10.3742 5.21782 10.3922 5.18398 10.4244C5.15015 10.4565 5.12989 10.5004 5.12734 10.547L4.93934 14.352L5.12734 16.81C5.13206 16.855 5.15327 16.8966 5.18688 16.9269C5.22048 16.9571 5.26411 16.9739 5.30934 16.9739C5.35456 16.9739 5.39819 16.9571 5.4318 16.9269C5.4654 16.8966 5.48661 16.855 5.49134 16.81L5.70334 14.352ZM6.28434 16.987C6.33612 16.9871 6.38593 16.9671 6.42337 16.9313C6.46082 16.8956 6.48302 16.8467 6.48534 16.795V16.797L6.68434 14.353L6.48534 9.677C6.48173 9.62575 6.45883 9.57778 6.42125 9.54275C6.38367 9.50772 6.33421 9.48824 6.28284 9.48824C6.23146 9.48824 6.182 9.50772 6.14442 9.54275C6.10684 9.57778 6.08394 9.62575 6.08034 9.677L5.90634 14.353L6.08134 16.796C6.08417 16.8477 6.10686 16.8964 6.14468 16.9318C6.18251 16.9672 6.23254 16.9876 6.28434 16.987ZM7.26434 9.076C7.20698 9.07568 7.15172 9.09758 7.11015 9.1371C7.06858 9.17662 7.04392 9.2307 7.04134 9.288L6.87934 14.353L7.04134 16.771C7.04392 16.8282 7.06862 16.8822 7.11022 16.9215C7.15182 16.9609 7.20707 16.9826 7.26434 16.982C7.32167 16.9828 7.37707 16.9612 7.41872 16.9218C7.46038 16.8824 7.485 16.8283 7.48734 16.771L7.67234 14.353L7.48734 9.288C7.48525 9.23053 7.46074 9.17616 7.41906 9.13653C7.37738 9.09691 7.32184 9.07518 7.26434 9.076ZM8.25334 16.987C8.31631 16.9881 8.3772 16.9644 8.42284 16.921C8.46849 16.8776 8.49525 16.818 8.49734 16.755V16.757L8.66734 14.353L8.49734 9.118C8.49525 9.05522 8.46863 8.99577 8.4232 8.95239C8.37777 8.90902 8.31714 8.88518 8.25434 8.886C8.19138 8.88466 8.13046 8.90832 8.08491 8.9518C8.03937 8.99529 8.01291 9.05505 8.01134 9.118L7.85834 14.353L8.01134 16.757C8.01334 16.886 8.12034 16.987 8.25334 16.987ZM9.25134 16.985C9.31945 16.9858 9.38516 16.9599 9.43434 16.9128C9.48352 16.8656 9.51224 16.8011 9.51434 16.733V16.735L9.67134 14.354L9.51434 9.251C9.51173 9.18327 9.48279 9.11923 9.43366 9.07253C9.38453 9.02584 9.31911 9.00017 9.25134 9.001C9.18339 8.9999 9.11771 9.02545 9.06837 9.07218C9.01903 9.11891 8.98994 9.18309 8.98734 9.251L8.84934 14.354L8.98834 16.734C8.99134 16.874 9.10734 16.984 9.25134 16.984V16.985ZM10.6823 14.354L10.5403 9.437C10.5377 9.36379 10.5065 9.29452 10.4534 9.24404C10.4003 9.19356 10.3296 9.16591 10.2563 9.167C10.1827 9.16565 10.1116 9.19332 10.0582 9.24404C10.0049 9.29476 9.97369 9.36444 9.97134 9.438L9.84434 14.354L9.97134 16.72C9.97395 16.7934 10.0053 16.8628 10.0586 16.9133C10.1119 16.9638 10.1829 16.9914 10.2563 16.99C10.3301 16.9911 10.4013 16.963 10.4545 16.9119C10.5076 16.8608 10.5385 16.7907 10.5403 16.717V16.72L10.6823 14.354ZM11.2683 16.994C11.4333 16.994 11.5693 16.864 11.5723 16.704L11.7013 14.355L11.5723 8.505C11.5697 8.42639 11.5365 8.35193 11.4796 8.29755C11.4228 8.24316 11.347 8.21317 11.2683 8.214C11.1897 8.21342 11.1139 8.24346 11.0569 8.29777C11 8.35207 10.9664 8.42639 10.9633 8.505L10.8483 14.353L10.9633 16.705C10.9663 16.863 11.1033 16.994 11.2683 16.994ZM12.2773 7.664C12.1931 7.66263 12.1117 7.69432 12.0506 7.75228C11.9895 7.81023 11.9535 7.88983 11.9503 7.974L11.8173 14.356L11.9513 16.671C11.9545 16.7546 11.9902 16.8337 12.051 16.8913C12.1117 16.9489 12.1926 16.9804 12.2763 16.979C12.3604 16.9801 12.4414 16.9481 12.5021 16.8899C12.5627 16.8317 12.598 16.752 12.6003 16.668V16.671L12.7463 14.356L12.6003 7.975C12.598 7.89118 12.5628 7.81163 12.5024 7.75347C12.442 7.69531 12.3612 7.66318 12.2773 7.664ZM13.1993 16.996L21.3803 17C23.0113 17 24.3333 15.732 24.3333 14.167C24.3333 12.603 23.0113 11.335 21.3803 11.335C20.9763 11.335 20.5903 11.414 20.2383 11.555C20.0053 9.003 17.7733 7 15.0513 7C14.3863 7 13.7373 7.126 13.1643 7.339C12.9413 7.422 12.8813 7.507 12.8793 7.672V16.661C12.8825 16.7463 12.9168 16.8275 12.9757 16.8893C13.0347 16.951 13.1143 16.989 13.1993 16.996Z" />
+            </g>
+            <defs>
+              <clipPath id="clip0_213_54">
+                <rect width="24" height="24" transform="translate(0.333336)" />
+              </clipPath>
+            </defs>
+          </svg></a>
+      </div>
+    </div>
+    <div class="footer__info">
+      <div class="footer__section__diver--upper">
+        <p class="footer__section__title">Info</p>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sounds of the Universe</a></li>
+        </ul>
+      </div>
+      <div class="footer__section__divider--below">
+        <span>MP3 Store:</span>
+        <select name="storeCountry" id="">
+          <option value="UK">UK</option>
+          <option value="Rest of the World">Rest aof the World</option>
+          <option value="USA and Canada">USA and Canada</option>
+        </select>
+      </div>
+    </div>
+    <div class="footer__soulJazzRecords">
+      <div class="footer__section__divider--upper">
+        <p class="footer__section__title">Soul Jazz Records</p>
+        <span>7 Broadwick street<br>Soho, London W1F 0DA</span>
+        <a href="#" class="googleMapsLink">Google Maps link</a>
+      </div>
+      <div class="footer__section__divider--below">
+        <a href="#">Switch to Sounds of the Universe</a>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <div class="footer__section__divider--upper">
+        <p class="footer__section__title">Contact</p>
+        <span>020 7734 3341</span>
+        <a href="#" class="emailAddress">info@soundsoftheuniverse.com</a>
+        <span>Website by</span>
+        <a href="#">Studio Scasascia</a>
+      </div>
+      <div class="footer__section__divider--below">
+        <span>Payment options</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M20.1211 18.3868C20.1211 18.6703 19.9299 18.8743 19.6546 18.8743C19.3711 18.8743 19.1881 18.6575 19.1881 18.3868C19.1881 18.1161 19.3711 17.8993 19.6546 17.8993C19.9299 17.8993 20.1211 18.1161 20.1211 18.3868ZM7.17128 17.8993C6.87504 17.8993 6.70479 18.1161 6.70479 18.3868C6.70479 18.6575 6.87579 18.8743 7.17128 18.8743C7.44202 18.8743 7.62501 18.6703 7.62501 18.3868C7.62051 18.1161 7.44202 17.8993 7.17128 17.8993ZM12.0671 17.8873C11.8421 17.8873 11.7041 18.0328 11.6711 18.2495H12.4669C12.4294 18.0118 12.2839 17.8873 12.0671 17.8873ZM16.5587 17.8993C16.2752 17.8993 16.105 18.1161 16.105 18.3868C16.105 18.6575 16.276 18.8743 16.5587 18.8743C16.8422 18.8743 17.0252 18.6703 17.0252 18.3868C17.0252 18.1161 16.8415 17.8993 16.5587 17.8993ZM20.9708 18.9868C20.9708 18.9995 20.9836 19.0078 20.9836 19.0325C20.9836 19.0453 20.9708 19.0535 20.9708 19.0783C20.9581 19.091 20.9581 19.0993 20.9498 19.1113C20.9371 19.124 20.9288 19.1323 20.9041 19.1323C20.8913 19.145 20.8831 19.145 20.8583 19.145C20.8456 19.145 20.8373 19.145 20.8126 19.1323C20.7998 19.1323 20.7916 19.1195 20.7796 19.1113C20.7669 19.0985 20.7586 19.0903 20.7586 19.0783C20.7459 19.0573 20.7459 19.0453 20.7459 19.0325C20.7459 19.0115 20.7459 18.9995 20.7586 18.9868C20.7586 18.9658 20.7714 18.9538 20.7796 18.941C20.7923 18.9283 20.8006 18.9283 20.8126 18.92C20.8336 18.9073 20.8456 18.9073 20.8583 18.9073C20.8793 18.9073 20.8913 18.9073 20.9041 18.92C20.9251 18.932 20.9371 18.932 20.9498 18.941C20.9626 18.95 20.9581 18.9658 20.9708 18.9868ZM20.8793 19.0453C20.9003 19.0453 20.9003 19.0325 20.9123 19.0325C20.9251 19.0198 20.9251 19.0115 20.9251 18.9995C20.9251 18.9875 20.9251 18.9785 20.9123 18.9665C20.9003 18.9665 20.8913 18.9538 20.8666 18.9538H20.7998V19.0993H20.8328V19.0408H20.8456L20.8913 19.0993H20.9243L20.8793 19.0453ZM24 4.66672V19.3333C23.9998 19.8637 23.789 20.3723 23.4139 20.7474C23.0389 21.1225 22.5302 21.3333 21.9998 21.3335H2.00019C1.46977 21.3333 0.961126 21.1225 0.586061 20.7474C0.210996 20.3723 0.000198772 19.8637 0 19.3333V4.66672C0.000198772 4.1363 0.210996 3.62766 0.586061 3.2526C0.961126 2.87753 1.46977 2.66673 2.00019 2.66653H21.9998C22.5302 2.66673 23.0389 2.87753 23.4139 3.2526C23.789 3.62766 23.9998 4.1363 24 4.66672ZM2.66767 10.4828C2.66767 13.6702 5.25509 16.2531 8.43799 16.2531C9.57153 16.2499 10.6794 15.9154 11.6254 15.2909C8.58798 12.8205 8.60898 8.15786 11.6254 5.68669C10.6803 5.06018 9.57185 4.72555 8.43799 4.72447C5.25509 4.72072 2.66767 7.30739 2.66767 10.4828ZM12.0004 15.0164C14.938 12.7245 14.9253 8.25836 12.0004 5.95443C9.07547 8.25836 9.06272 12.729 12.0004 15.0164ZM6.07106 18.1955C6.07106 17.8333 5.83332 17.5956 5.45833 17.5828C5.26634 17.5828 5.06234 17.6413 4.9251 17.8536C4.82535 17.6826 4.65435 17.5828 4.41661 17.5828C4.33022 17.5815 4.24482 17.6013 4.16783 17.6405C4.09084 17.6797 4.0246 17.7372 3.97488 17.8078V17.6248H3.63364V19.154H3.97488C3.97488 18.3665 3.87063 17.8956 4.34986 17.8956C4.7751 17.8956 4.69185 18.3208 4.69185 19.154H5.02109C5.02109 18.3913 4.91685 17.8956 5.39608 17.8956C5.82132 17.8956 5.73732 18.3125 5.73732 19.154H6.07931V18.1955H6.07106ZM7.94225 17.6248H7.61301V17.8078C7.55473 17.7351 7.48036 17.6769 7.39577 17.6379C7.31117 17.5989 7.21866 17.58 7.12553 17.5828C6.69654 17.5828 6.3673 17.9248 6.3673 18.3868C6.3673 18.8533 6.69654 19.1908 7.12553 19.1908C7.34227 19.1908 7.50052 19.1113 7.61301 18.9658V19.1578H7.94225V17.6248ZM9.6297 18.6913C9.6297 18.0666 8.67573 18.3493 8.67573 18.0576C8.67573 17.8198 9.17146 17.8581 9.44671 18.0118L9.58395 17.7411C9.19246 17.4868 8.32549 17.4913 8.32549 18.0831C8.32549 18.6785 9.27946 18.4288 9.27946 18.7078C9.27946 18.9703 8.71698 18.9493 8.41699 18.7408L8.27149 19.0033C8.73798 19.3198 9.6297 19.253 9.6297 18.6905V18.6913ZM11.1049 19.0783L11.0134 18.7948C10.8552 18.8818 10.5049 18.9778 10.5049 18.6238V17.9323H11.0509V17.6241H10.5049V17.1576H10.1629V17.6241H9.84644V17.9286H10.1629V18.6245C10.1629 19.358 10.8837 19.2245 11.1049 19.0783ZM11.6584 18.5203H12.8044C12.8044 17.8453 12.4961 17.5783 12.0791 17.5783C11.6374 17.5783 11.3209 17.9076 11.3209 18.3823C11.3209 19.2365 12.2629 19.3783 12.7294 18.974L12.5711 18.7243C12.2464 18.9913 11.7544 18.9658 11.6584 18.5203ZM14.1213 17.6248C13.9301 17.5416 13.6383 17.5498 13.4883 17.8078V17.6248H13.1463V19.154H13.4883V18.2915C13.4883 17.8078 13.8843 17.8708 14.0216 17.9413L14.1213 17.6248ZM14.563 18.3868C14.563 17.9113 15.0468 17.7576 15.4255 18.0366L15.5838 17.7658C15.1 17.3871 14.2211 17.5948 14.2211 18.3905C14.2211 19.2155 15.154 19.382 15.5838 19.0153L15.4255 18.7445C15.0423 19.0153 14.563 18.8533 14.563 18.386V18.3868ZM17.3417 17.6248H16.9997V17.8078C16.654 17.3496 15.754 17.6083 15.754 18.3868C15.754 19.187 16.687 19.4158 16.9997 18.9658V19.1578H17.3417V17.6248ZM18.7457 17.6248C18.6459 17.5746 18.2874 17.5041 18.1127 17.8078V17.6248H17.7834V19.154H18.1127V18.2915C18.1127 17.8333 18.4877 17.8626 18.6459 17.9413L18.7457 17.6248ZM20.4249 17.0038H20.0956V17.8078C19.7536 17.3541 18.8499 17.5956 18.8499 18.3868C18.8499 19.1953 19.7874 19.4113 20.0956 18.9658V19.1578H20.4249V17.0038ZM20.7421 13.8749V14.0669H20.7751V13.8749H20.8538V13.8419H20.6619V13.8749H20.7421ZM21.0166 19.0325C21.0166 19.0115 21.0166 18.9868 21.0046 18.9658C20.9918 18.953 20.9836 18.9328 20.9716 18.92C20.9596 18.9073 20.9386 18.899 20.9258 18.887C20.9048 18.887 20.8801 18.8743 20.8591 18.8743C20.8463 18.8743 20.8261 18.887 20.8006 18.887C20.7842 18.8963 20.7688 18.9073 20.7549 18.92C20.7339 18.932 20.7219 18.953 20.7219 18.9658C20.7091 18.9868 20.7091 19.0115 20.7091 19.0325C20.7091 19.0453 20.7091 19.0655 20.7219 19.091C20.7219 19.1038 20.7346 19.124 20.7549 19.1368C20.7675 19.151 20.7831 19.1622 20.8006 19.1698C20.8216 19.1818 20.8463 19.1818 20.8591 19.1818C20.8801 19.1818 20.9048 19.1818 20.9258 19.1698C20.9386 19.157 20.9588 19.1488 20.9716 19.1368C20.9843 19.1248 20.9926 19.1038 21.0046 19.091C21.0166 19.0663 21.0166 19.0453 21.0166 19.0325ZM21.1501 13.8374H21.0916L21.0248 13.9829L20.9581 13.8374H20.8996V14.0624H20.9326V13.8914L20.9993 14.0369H21.0451L21.1036 13.8914V14.0624H21.1493L21.1501 13.8374ZM21.3331 10.4828C21.3331 7.30739 18.7457 4.72072 15.5628 4.72072C14.4292 4.72356 13.3212 5.05804 12.3754 5.68294C15.3798 8.15411 15.4255 12.8287 12.3754 15.2871C13.3209 15.9126 14.4291 16.2471 15.5628 16.2494C18.7457 16.2539 21.3331 13.6702 21.3331 10.4828Z" />
+        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.76301 12.0915C7.76301 12.6 7.35877 12.987 6.84654 12.987C6.4633 12.987 6.17981 12.7702 6.17981 12.3622C6.17981 11.8537 6.57579 11.4458 7.08428 11.4458C7.47202 11.4458 7.76301 11.6835 7.76301 12.0915ZM3.35465 10.0711H3.1589C3.09665 10.0711 3.03366 10.1131 3.02541 10.1835L2.84616 11.2965L3.18815 11.2838C3.64639 11.2838 4.00037 11.2215 4.08362 10.692C4.17962 10.1333 3.82563 10.0711 3.35465 10.0711ZM15.1878 10.0711H15.0003C14.9253 10.0711 14.875 10.1131 14.8668 10.1835L14.692 11.2965L15.025 11.2838C15.5665 11.2838 15.9415 11.1585 15.9415 10.5338C15.937 10.0921 15.5425 10.0711 15.1878 10.0711ZM24 4.66672V19.3333C23.9998 19.8637 23.789 20.3723 23.4139 20.7474C23.0389 21.1225 22.5302 21.3333 21.9998 21.3335H2.00019C1.46977 21.3333 0.961126 21.1225 0.586061 20.7474C0.210996 20.3723 0.000198772 19.8637 0 19.3333V4.66672C0.000198772 4.1363 0.210996 3.62766 0.586061 3.2526C0.961126 2.87753 1.46977 2.66673 2.00019 2.66653H21.9998C22.5302 2.66673 23.0389 2.87753 23.4139 3.2526C23.789 3.62766 23.9998 4.1363 24 4.66672ZM5.34658 10.308C5.34658 9.43282 4.6716 9.14108 3.90063 9.14108H2.23418C2.18035 9.14149 2.12854 9.16166 2.08859 9.19774C2.04863 9.23382 2.02331 9.28331 2.01744 9.33683L1.33421 13.5907C1.32146 13.6739 1.38446 13.7572 1.4677 13.7572H2.25968C2.37218 13.7572 2.47642 13.6364 2.48917 13.5194L2.67667 12.411C2.71867 12.111 3.2264 12.2152 3.42664 12.2152C4.61836 12.2152 5.34733 11.5073 5.34733 10.3073L5.34658 10.308ZM8.85497 10.6748H8.063C7.90475 10.6748 7.8965 10.9043 7.88825 11.0168C7.64676 10.6628 7.29652 10.5998 6.90053 10.5998C5.87982 10.5998 5.10059 11.4953 5.10059 12.483C5.10059 13.2952 5.60908 13.8247 6.4213 13.8247C6.79629 13.8247 7.26277 13.6207 7.52527 13.329C7.50103 13.4132 7.48693 13.5001 7.48327 13.5877C7.48327 13.6837 7.52527 13.7542 7.61676 13.7542H8.33374C8.44624 13.7542 8.54223 13.6334 8.56323 13.5164L8.98847 10.8375C9.00122 10.758 8.93822 10.6748 8.85497 10.6748ZM10.5424 14.7539L13.1966 10.8953C13.2176 10.8743 13.2176 10.8533 13.2176 10.8248C13.2176 10.7543 13.1553 10.6793 13.0841 10.6793H12.2839C12.2466 10.6808 12.2103 10.6909 12.1777 10.7091C12.1451 10.7272 12.1173 10.7527 12.0964 10.7835L10.9924 12.4087L10.5342 10.8465C10.517 10.799 10.4859 10.7577 10.445 10.7281C10.4041 10.6984 10.3552 10.6817 10.3047 10.68H9.52545C9.4542 10.68 9.39196 10.755 9.39196 10.8255C9.39196 10.8758 10.2042 13.1925 10.2754 13.4129C10.1629 13.5712 9.42121 14.6047 9.42121 14.7299C9.42121 14.8049 9.48345 14.8634 9.5547 14.8634H10.3549C10.3924 14.8609 10.4287 14.8499 10.4612 14.8312C10.4937 14.8125 10.5215 14.7865 10.5424 14.7554V14.7539ZM17.1797 10.308C17.1797 9.43282 16.5047 9.14108 15.7338 9.14108H14.0793C14.0239 9.14064 13.9702 9.16019 13.928 9.19614C13.8859 9.2321 13.8581 9.28205 13.8498 9.33683L13.1748 13.5869C13.1666 13.6702 13.2288 13.7534 13.3083 13.7534H14.1626C14.2458 13.7534 14.3081 13.6912 14.3291 13.6199L14.5165 12.4117C14.5585 12.1117 15.067 12.216 15.2665 12.216C16.45 12.216 17.1797 11.508 17.1797 10.308ZM20.6874 10.6748H19.8954C19.7371 10.6748 19.7289 10.9043 19.7161 11.0168C19.4866 10.6628 19.1327 10.5998 18.7284 10.5998C17.7077 10.5998 16.9285 11.4953 16.9285 12.483C16.9285 13.2952 17.437 13.8247 18.2492 13.8247C18.6369 13.8247 19.1034 13.6207 19.3531 13.329C19.3404 13.3912 19.3111 13.5247 19.3111 13.5877C19.3111 13.6837 19.3531 13.7542 19.4446 13.7542H20.1654C20.2779 13.7542 20.3739 13.6334 20.3949 13.5164L20.8201 10.8375C20.8328 10.758 20.7706 10.6748 20.6874 10.6748ZM22.6665 9.28733C22.6665 9.20408 22.6043 9.14183 22.533 9.14183H21.7621C21.6998 9.14183 21.6368 9.19208 21.6286 9.25433L20.9536 13.5877L20.9416 13.6087C20.9416 13.6837 21.0038 13.7542 21.0871 13.7542H21.7748C21.8791 13.7542 21.9833 13.6334 21.9916 13.5164L22.6665 9.30008V9.28733ZM18.9167 11.4458C18.4082 11.4458 18.0122 11.85 18.0122 12.3622C18.0122 12.7665 18.3039 12.987 18.6872 12.987C19.1874 12.987 19.5916 12.6037 19.5916 12.0915C19.5961 11.6835 19.3044 11.4458 18.9167 11.4458Z" />
+        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.5879 10.971C19.5879 10.971 19.9044 12.5212 19.9756 12.846H18.5844L19.2511 11.0333C19.2429 11.046 19.3884 10.6538 19.4716 10.4123L19.5879 10.971ZM24 4.66672V19.3333C23.9998 19.8637 23.789 20.3723 23.4139 20.7474C23.0389 21.1225 22.5302 21.3333 21.9998 21.3335H2.00019C1.46977 21.3333 0.961126 21.1225 0.586061 20.7474C0.210996 20.3723 0.000198772 19.8637 0 19.3333V4.66672C0.000198772 4.1363 0.210996 3.62766 0.586061 3.2526C0.961126 2.87753 1.46977 2.66673 2.00019 2.66653H21.9998C22.5302 2.66673 23.0389 2.87753 23.4139 3.2526C23.789 3.62766 23.9998 4.1363 24 4.66672ZM6.35455 15.1334L8.98772 8.6671H7.21702L5.57983 13.0837L5.40058 12.1882L4.8171 9.21308C4.7211 8.80059 4.42561 8.6836 4.05887 8.6671H1.36346L1.33421 8.79609C1.9515 8.94753 2.54361 9.18751 3.09215 9.50857L4.58386 15.1334H6.35455ZM10.2882 15.1416L11.3381 8.6671H9.66345L8.61798 15.1416H10.2882ZM16.117 13.0252C16.1252 12.288 15.6753 11.7255 14.713 11.2628C14.1258 10.9665 13.7673 10.767 13.7673 10.4625C13.7756 10.1873 14.0718 9.90381 14.7295 9.90381C15.1579 9.89172 15.5836 9.97578 15.9753 10.1498L16.1252 10.2203L16.3547 8.82009C15.876 8.6368 15.3674 8.54349 14.8548 8.54485C13.2003 8.54485 12.0379 9.42832 12.0296 10.686C12.0169 11.6153 12.8628 12.132 13.4966 12.444C14.1423 12.7605 14.3636 12.969 14.3636 13.248C14.3553 13.6814 13.8386 13.8809 13.3593 13.8809C12.6926 13.8809 12.3341 13.7767 11.7881 13.5352L11.5676 13.4309L11.3344 14.8852C11.7259 15.0644 12.4511 15.2226 13.2011 15.2309C14.959 15.2346 16.105 14.3639 16.1177 13.023L16.117 13.0252ZM21.9998 15.1416L20.6499 8.6671H19.3539C18.9542 8.6671 18.6497 8.78409 18.4787 9.20483L15.991 15.1424H17.7489C17.7489 15.1424 18.0362 14.3422 18.0992 14.1719H20.2494C20.2996 14.4014 20.4496 15.1424 20.4496 15.1424L21.9998 15.1416Z" />
+        </svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.5479 8.32499C13.5479 7.64174 12.961 7.55849 12.407 7.55849L10.7789 7.54649V10.434H11.4618V9.38849H12.2114C12.9774 9.38849 12.8155 9.81749 12.8275 10.434H13.5186V9.87149C13.5186 9.48824 13.4564 9.24224 13.0607 9.10499C13.3687 8.97974 13.5524 8.65874 13.5479 8.32499ZM12.3238 8.79599H11.4618V8.15849H12.3366C12.5487 8.15849 12.7818 8.20049 12.7818 8.46674C12.7818 8.74199 12.5614 8.79599 12.3238 8.79599ZM11.6282 12.525H9.43344L8.55868 13.4745L7.70492 12.525H4.93597L4.93148 15.4125H7.65544L8.54219 14.454L9.39147 15.4125H10.7325L10.737 14.442C11.524 14.442 12.7901 14.6332 12.7901 13.4715C12.7901 12.7507 12.2781 12.525 11.6282 12.525ZM7.30539 14.8042H5.61509V14.229H7.12624V13.6417H5.61509V13.1212H7.35186L8.09694 13.9627L7.30539 14.8042ZM10.0458 15.1455L8.99194 13.9747L10.0458 12.8332V15.1455ZM11.62 13.854H10.737V13.1205H11.632C11.8651 13.1205 12.057 13.2165 12.057 13.4707C12.057 13.737 11.8651 13.854 11.62 13.854ZM10.3037 8.15849V7.55024H7.99275V10.4377H10.3037V9.84224H8.68386V9.26699H10.258V8.67974H8.68386V8.15924L10.3037 8.15849ZM15.8926 13.3042C15.8926 12.621 15.3056 12.525 14.7644 12.525H13.1236L13.1199 15.4125H13.811L13.8155 14.3587H14.5486C15.0066 14.3587 15.1647 14.442 15.1647 14.9332L15.161 15.4125H15.8521L15.8566 14.838C15.8566 14.4667 15.7816 14.2087 15.3986 14.0715C15.7194 13.9425 15.8903 13.6215 15.8941 13.305L15.8926 13.3042ZM14.6767 13.7707H13.8147V13.1205H14.6895C14.9016 13.1205 15.1347 13.1625 15.1347 13.4287C15.1347 13.716 14.9099 13.7707 14.6767 13.7707ZM7.48079 10.4377V7.55024H6.33169L5.51165 9.50849L4.60766 7.55024H3.47954V10.2877L2.30945 7.55024H1.28927L0.0524705 10.4377H0.797551L1.0644 9.80024H2.50134L2.76744 10.4377H4.17515V8.17949L5.17434 10.4377H5.78225L6.78143 8.17949V10.4377H7.48079ZM1.30876 9.20024L1.775 8.05049L2.25398 9.20024H1.30876ZM21.1898 15.8205V15.633C20.7401 15.8662 21.0272 15.8205 14.664 15.8205C14.664 14.7705 14.6685 14.8245 14.664 14.7705C14.5935 14.766 14.5306 14.766 14.2727 14.766C14.2727 15.5122 14.2682 15.0495 14.2682 15.8205H12.6192C12.6192 15.3165 12.6229 15.183 12.6229 14.604C12.2061 14.8537 11.6739 14.8702 11.195 14.862C11.195 15.4747 11.1905 15.2077 11.1905 15.8205H9.15385C8.94172 15.5827 9.04141 15.6915 8.51221 15.0952C8.37879 15.2407 7.97926 15.6742 7.84209 15.8205H4.42701V11.9745H7.88781C8.0962 12.2077 8.00475 12.1035 8.5332 12.6915C8.66662 12.546 9.04141 12.1327 9.18683 11.9745H11.602C12.0105 11.9745 12.3516 12.054 12.6139 12.2077V11.9745C14.8754 11.9745 15.2914 11.916 15.7666 12.1867V11.9745H19.0235V12.1912C19.498 11.904 19.8398 11.9745 21.7258 11.9745V12.183C22.1545 11.937 22.4169 11.9662 23.9873 11.9745V4.66649C23.9871 4.13606 23.7764 3.6274 23.4015 3.25232C23.0266 2.87725 22.5183 2.66644 21.9881 2.66624H1.99913C1.46899 2.66644 0.960615 2.87725 0.58575 3.25232C0.210884 3.6274 0.000198666 4.13606 0 4.66649V9.24149L0.961709 6.99524H2.61528C2.79443 7.41599 2.68199 7.14974 2.99007 7.87424V6.99524H4.90599C5.02667 7.25399 5.36848 7.99499 5.48466 8.24549C5.72603 7.67924 5.90518 7.24949 6.00937 6.99524H10.2985C10.2985 6.99149 10.7774 6.99524 10.7812 6.99524C12.6012 7.00349 13.0134 6.96224 13.4632 7.21574V6.99524H15.125V7.38299C15.4413 7.12874 15.8701 6.99524 16.4038 6.99524H17.5529C17.5529 7.01624 17.6316 7.00799 17.6488 7.00799H18.9981C19.1727 7.41599 19.1068 7.25774 19.3646 7.86674V7.00799H21.1681C21.372 7.34099 21.1261 6.93299 21.6343 7.77449V7.00799H23.2961V10.8412H21.5639C21.339 10.4662 21.5054 10.7497 21.0137 9.92849V10.8412H18.8152C18.5483 10.2247 18.8107 10.8285 18.5401 10.2037H17.7485C17.5739 10.6207 17.6571 10.4205 17.4824 10.8412H16.3663C15.8543 10.8412 15.4376 10.716 15.1295 10.4707V10.8412H12.3605C12.3478 10.2622 12.3561 9.80774 12.3561 9.80774C12.2811 9.79574 12.2144 9.79949 11.9483 9.79949V10.8457H6.30545V10.371C6.20126 10.6042 6.19302 10.617 6.09332 10.8457H4.86476C4.69836 10.4745 4.74408 10.5787 4.65263 10.371V10.8457H2.44962C2.27422 10.425 2.35817 10.6252 2.18277 10.2082H1.38297C1.20832 10.6252 1.29152 10.425 1.11687 10.8457H0.00899494V19.3335C0.00919361 19.8639 0.219879 20.3726 0.594745 20.7477C0.96961 21.1227 1.47798 21.3335 2.00812 21.3337H22.0009C22.531 21.3335 23.0394 21.1227 23.4142 20.7477C23.7891 20.3726 23.9998 19.8639 24 19.3335V15.567C23.4708 15.9127 22.638 15.8212 21.1891 15.8212L21.1898 15.8205ZM22.701 13.1332H23.9543V12.525H22.584C22.0511 12.525 21.5931 12.7995 21.5931 13.3875C21.5931 14.7622 23.3711 13.9207 23.3711 14.529C23.3711 14.7412 23.192 14.796 23.021 14.796H21.6883L21.6838 15.4125H23.0166C23.3666 15.4125 23.7496 15.3375 23.9535 15.042V13.9672C23.5165 13.392 22.3172 13.9132 22.3172 13.4047C22.3172 13.1632 22.5091 13.134 22.7002 13.134L22.701 13.1332ZM20.3271 14.7915H18.9861L18.9823 15.408H20.3233C20.9395 15.408 21.4147 15.1747 21.4147 14.4915C21.4147 13.1085 19.6285 14.025 19.6285 13.3957C19.6285 13.1625 19.8323 13.1295 20.0115 13.1295H21.2775V12.5212H19.8953C19.3624 12.5212 18.9164 12.7965 18.9164 13.3837C18.9164 14.7585 20.6944 13.9042 20.6944 14.5252C20.6906 14.7502 20.4987 14.7915 20.3278 14.7915H20.3271ZM18.5701 13.1205V12.525H16.2711L16.2666 15.4125H18.5656L18.5693 14.817L16.9622 14.8042V14.229H18.5401V13.6417H16.966V13.1212L18.5701 13.1205ZM16.2254 8.61674C16.2134 8.62499 16.1669 8.70824 16.1669 8.93324C16.1669 9.18299 16.2044 9.25424 16.2126 9.26249C16.2209 9.26624 16.2584 9.28349 16.3543 9.28349L16.6586 8.57924C16.6129 8.57924 16.5709 8.57549 16.5297 8.57549C16.2966 8.57549 16.2381 8.60399 16.2254 8.61674ZM16.4008 7.54574C15.4218 7.54574 14.9848 8.04599 14.9848 9.01649C14.9848 9.94199 15.4098 10.4332 16.3588 10.4332H17.1586L17.4247 9.79574H18.8534L19.1285 10.4332H20.5317V8.27099L21.8307 10.4332H22.8134V7.55849H22.1096V9.56249L20.8982 7.55849H19.8443V10.2832L18.6825 7.55849H17.6496L16.6706 9.82949H16.3625C15.8086 9.82949 15.6924 9.49199 15.6924 9.00074C15.6924 8.00924 16.3461 8.16674 17.0709 8.17949V7.54724L16.4008 7.54574ZM18.154 8.04974L18.6203 9.19949H17.6713L18.154 8.04974ZM13.9437 7.55024V10.4377H14.6475V7.55024H13.9437Z" />
+        </svg>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+footer{
+  background-color: #101010;
+  padding: 24px 40px 56px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  color: #828282;
+}
+footer a:hover{
+  color: #d7bd0e;
+}
+footer > div{
+  display: flex;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__section__title{
+  font-weight: 700;
+}
+.googleMapsLink{
+  display: block;
+  margin-top: 20px;
+}
+.emailAddress{
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__section__divider--below{
+  border-top: 1px solid #828282;
+  margin-top: 32px;
+  padding-top: 4px;
+}
+.footer__contact .footer__section__divider--below{
+  display: flex;
+  gap: 4px;
+}
+.footer__contact .footer__section__divider--below svg{
+  width: 20px;
+  fill:#666;
+}
