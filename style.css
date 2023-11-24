@@ -71,6 +71,10 @@ footer .btn--icon:hover {
   fill: #d7bd0e;
 }
 
+.accent{
+  color:#ff6600;
+}
+
 /* Swiper start*/
 .featuredNews .swiper-wrapper{
   background-color: #000;
@@ -261,11 +265,14 @@ main {
   width: 150px;
   height: 150px;
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .newReleases__list ul li .dimmer {
   width: 100%;
   height: 100%;
+  padding: 8px;
   position: absolute;
   top: 0;
   left: 0;
@@ -273,6 +280,7 @@ main {
   transition-delay: 0.2s;
   background-color: rgba(0, 0, 0, 0);
   opacity: 0;
+  font-size: 14px;
 }
 
 .newReleases__list ul li .dimmer:hover {
