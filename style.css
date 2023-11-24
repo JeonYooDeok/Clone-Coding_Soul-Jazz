@@ -71,18 +71,33 @@ footer .btn--icon:hover {
   fill: #d7bd0e;
 }
 
-.swiper-pagination {
+/* Swiper start*/
+.featuredNews .swiper-wrapper{
+  background-color: #000;
+  padding: 0 8px;
+}
+
+.featuredNews .swiper-pagination .swiper-pagination-bullet {
+  background-color: #ffffff;
+}
+
+.featuredNews .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.soulJazzRecordsBookTitles .swiper-pagination {
   top: 10px !important;
   height: 24px !important;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.soulJazzRecordsBookTitles .swiper-pagination .swiper-pagination-bullet {
   background-color: #fff;
 }
 
-.swiper-pagination .swiper-pagination-bullet-active {
+.soulJazzRecordsBookTitles .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ff6600;
 }
+/* Swiper end */
 
 /* Main start */
 main {
@@ -107,14 +122,13 @@ main {
 }
 
 .featuredNews__content {
-  flex-grow: 1;
   background-color: #000;
   padding: 8px;
-  position: relative;
+  cursor: pointer;
 }
 
 .featuredNews img {
-  width: 100%;
+  width: 424px;
 }
 
 .featuredNews__content:hover span {
